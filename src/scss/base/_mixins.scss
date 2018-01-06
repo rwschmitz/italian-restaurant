@@ -1,0 +1,12 @@
+/*-------------------------
+
+- Define media queries here
+
+-------------------------*/
+
+
+@mixin mq($bp) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}

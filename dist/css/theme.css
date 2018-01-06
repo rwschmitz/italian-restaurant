@@ -1,0 +1,26 @@
+/*------------------------------------
+
+- Only import Sass files to theme.scss
+
+------------------------------------*/
+/*-------------------------
+
+- Define media queries here
+
+-------------------------*/
+/*------------------------------------
+
+- Define
+| -- Colors
+| -- Font families
+
+------------------------------------*/
+/* Colors */
+/* Font families */
+.headline {
+  font-family: "Playfair Display", serif;
+}
+
+.content {
+  font-family: "Raleway", sans-serif;
+}
