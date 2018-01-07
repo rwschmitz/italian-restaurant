@@ -1,6 +1,40 @@
+/* Child to .site-wrapper */
 .hero-wrapper {
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+/* Child to .hero-wrapper */
+.hero-background {
+  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+/* Child to .hero-wrapper */
+.hero-logo {
+  border: 5px solid yellow;
+  flex-basis: 100%;
+  img {
+    max-height: 50px;
+  }
+}
+/* Child to .hero-wrapper */
+.hero-headline {
+  @extend %headline;
+  border: 5px solid red;
+  flex-basis: 100%;
+  font-size: 32px;
+}
+/* Child to .hero-wrapper */
+.hero-content {
+  @extend %content;
+  border: 5px solid green;
+  flex-basis: 100%;
+  font-size: 14px;
 }

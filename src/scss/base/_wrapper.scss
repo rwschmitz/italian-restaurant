@@ -1,11 +1,7 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html, body, h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
 }
-
-.site-wrapper {
-    margin: 0 auto;
-    max-width: 1600px;
-    border: 1px solid red;
-    padding: 1rem;
+html, body {
+  height: 100%;
 }
