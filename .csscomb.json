@@ -8,7 +8,7 @@
     "block-indent": "  ",
     "color-shorthand": false,
     "element-case": "lower",
-    "eof-newline": false,
+    "eof-newline": true,
     "leading-zero": true,
     "quotes": "double",
     "space-before-colon": "",
