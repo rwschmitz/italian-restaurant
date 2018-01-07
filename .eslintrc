@@ -22,6 +22,7 @@
         "max-len": ["error", 120, 4],
         "max-statements": ["error", 15],
         "no-console": 0,
+        "no-irregular-whitespace": ["error", "always"],
         "no-param-reassign": ["error", { "props": false }],
         "object-shorthand": ["error", "always"]
     }

@@ -38,7 +38,9 @@ const globs = {
             '!.gitignore',
             '!.gitkeep',
             '!.keep',
-            `${dist}**/*`
+            `${dist}css/**/*`,
+            `${dist}**/*.html`
+            //`${dist}**/*`
         ],
         deploy: {
             globs: deployGlobs
