@@ -1,0 +1,17 @@
+/* Child to .wrapper */
+.nav-wrapper {
+  background-color: $coconut-milk;
+  display: flex;
+  flex-basis: 5%;
+  justify-content: center;
+}
+/* Child to .nav-wrapper */
+.nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+/* Child to .nav */
+.nav-logo {
+  max-width: 25%;
+}

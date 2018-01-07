@@ -1,40 +1,49 @@
-/* Child to .site-wrapper */
+/* Child to .wrapper */
 .hero-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  height: 100%;
+  flex-basis: 90%;
 }
 /* Child to .hero-wrapper */
-.hero-background {
-  background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url('../img/hero.jpg');
+.hero-middle {
+  align-items: center;
+  background-image: linear-gradient(rgba($black,.75), rgba($ultra-violet,0.35)), url('../img/hero2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-basis: 100%;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
-  position: relative;
+  padding: 5rem 0;
 }
-/* Child to .hero-wrapper */
-.hero-logo {
-  border: 5px solid yellow;
+/* Child to .hero-middle */
+.hero-container {
+  display: flex;
+  justify-content: center;
   flex-basis: 100%;
-  img {
-    max-height: 50px;
-  }
 }
-/* Child to .hero-wrapper */
+/* Child to .container */
 .hero-headline {
   @extend %headline;
-  border: 5px solid red;
-  flex-basis: 100%;
-  font-size: 32px;
+  color: $coconut-milk;
+  font-size: 50px;
+  letter-spacing: 16px;
+  border-bottom: 1px solid rgba($coconut-milk, 0.25);
 }
-/* Child to .hero-wrapper */
-.hero-content {
+/* Child to .container */
+.hero-btn {
   @extend %content;
-  border: 5px solid green;
-  flex-basis: 100%;
-  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid $coconut-milk;
+  color: $coconut-milk;
+  cursor: pointer;
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding: 1rem 2rem;
+  transition: background-color 250ms ease-in-out;
+    &:hover {
+      background-color: rgba($coconut-milk, 0.25);
+    }
 }

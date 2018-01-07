@@ -1,8 +1,10 @@
 // Only import files to theme.scss
 
+@import 'base/defaults';
 @import 'base/mixins';
 @import 'base/variables';
-@import 'base/wrapper';
 
 @import 'patterns/body';
+@import 'patterns/footer';
 @import 'patterns/hero';
+@import 'patterns/nav';
