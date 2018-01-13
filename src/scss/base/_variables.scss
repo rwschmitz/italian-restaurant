@@ -18,8 +18,8 @@ $warm-sand: #c0ab8c;
 $white: #fff;
 
 // Font families
+$lato: 'Lato', sans-serif;
 $playfair: 'Playfair Display', serif;
-$raleway: 'Raleway', sans-serif;
 
 // Placeholders
 %headline {
@@ -27,5 +27,5 @@ $raleway: 'Raleway', sans-serif;
 }
 
 %content {
-  font-family: $raleway;
+  font-family: $lato;
 }
