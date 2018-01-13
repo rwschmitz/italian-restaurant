@@ -14,6 +14,7 @@ import notify from 'gulp-notify';
 import sftp from 'gulp-sftp';
 import gutil from 'gulp-util';
 import cssTask from './css';
+import sassTask from './sass';
 import htmlTask from './html';
 import jsTask from './js';
 import mustacheTask from './mustache';
@@ -42,7 +43,7 @@ const watchFilesTask = (cb) => {
     gulp.watch(globs.to.watch.mustache, gulp.series(mustacheTask, cssTask));
 
     // Watch .scss files
-    gulp.watch(globs.to.watch.scss, gulp.series(cssTask, htmlTask, mustacheTask));
+    gulp.watch(globs.to.watch.scss, gulp.series(sassTask, cssTask, htmlTask, mustacheTask));
 
     // Watch .js files
     gulp.watch(globs.to.watch.js, gulp.parallel(jsTask));

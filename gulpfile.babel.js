@@ -32,6 +32,7 @@ import gulp from 'gulp';
 import buildTask from './gulp/tasks/build';
 import cleanTask from './gulp/tasks/clean';
 import cssTask from './gulp/tasks/css';
+import sassTask from './gulp/tasks/sass';
 import defaultTask from './gulp/tasks/default';
 import htmlTask from './gulp/tasks/html';
 import jsTask from './gulp/tasks/js';
@@ -45,6 +46,7 @@ import watchTask from './gulp/tasks/watch';
 gulp.task('build', buildTask);
 gulp.task('clean', cleanTask);
 gulp.task('css', cssTask);
+gulp.task('sass', sassTask);
 gulp.task('default', defaultTask);
 
 gulp.task('html', htmlTask);

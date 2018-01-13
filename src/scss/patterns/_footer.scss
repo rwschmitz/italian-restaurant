@@ -1,4 +1,4 @@
-/* Child to .wrapper */
+// Child to .wrapper
 .footer-wrapper {
   align-items: center;
   background-color: $coconut-milk;
@@ -7,50 +7,45 @@
   justify-content: space-between;
   padding: 0.5rem 2.5rem;
 }
-/* Child to .footer-wrapper */
+//Child to .footer-wrapper
 .footer-contact {
   @extend %content;
   align-items: center;
-  //border: 2px solid red;
   color: $black;
   display: flex;
-  font-size: 14px;
-  font-weight: 400;
   flex-basis: 50%;
   flex-wrap: wrap;
+  font-size: 14px;
+  font-weight: 400;
 }
-/* Child to footer-contact */
+// Child to footer-contact
 .footer-container {
-  //border: 3px solid yellow;
   display: flex;
   flex-basis: 100%;
-  justify-content: flex-start;
+  justify-content: center;
 }
-/* Children to footer-container */
+// Children to footer-container
 .footer-contact--location,
 .footer-contact--tel,
 .footer-contact--hours {
   align-items: center;
-  //border: 2px solid green;
   flex-basis: auto;
 }
-/*Child to footer-container */
+//Child to footer-container
 .footer-icons {
   align-items: center;
-  //border: 2px solid salmon;
   display: flex;
-  height: 20px;
+  height: 25px;
   padding: 0 1rem;
   transition: fill 250ms ease-in-out;
-  width: 20px;
+  width: 25px;
   &:hover {
     fill: $ultra-violet;
   }
 }
-/* Child to footer-wrapper */
+// Child to footer-wrapper
 .footer-social {
   align-items: center;
-  //border: 2px solid navy;
   display: flex;
   flex-basis: 25%;
   justify-content: space-between;
