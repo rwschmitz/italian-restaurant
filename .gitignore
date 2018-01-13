@@ -8,3 +8,13 @@ dist
 src/img
 Sale Information
 .editorconfig
+gulp
+.vscode
+.babelrc
+.editorconfig
+.csscomb.json
+.eslintrc
+.sass-lint.yml
+gulpfile.babel.js
+package-lock.json
+package.json
