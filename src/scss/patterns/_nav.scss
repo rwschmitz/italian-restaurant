@@ -1,17 +1,64 @@
-/* Child to .wrapper */
+@include highlighter(left);
+@include highlighter-reverse(left);
+// Child to .wrapper
 .nav-wrapper {
   background-color: $coconut-milk;
   display: flex;
-  flex-basis: 5%;
-  justify-content: center;
+  flex-basis: 10%;
 }
-/* Child to .nav-wrapper */
+// Child to .nav-wrapper
 .nav {
   align-items: center;
   display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
   justify-content: center;
+  padding: 0.25rem 0;
 }
-/* Child to .nav */
+// Child to .nav
 .nav-logo {
-  max-width: 25%;
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  padding: 0.25rem 0;
+  img {
+    height: 7.5%;
+    max-height: 7.5%;
+    max-width: 7.5%;
+    width: 7.5%;
+  }
+}
+// Child to .nav
+.nav-menu {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  max-width: 1600px;
+  padding: 0.25rem 0;
+  li {
+    a {
+      animation-duration: 250ms;
+      animation-fill-mode: forwards;
+      animation-name: highlighter;
+      animation-timing-function: ease-in-out;
+      background: linear-gradient(to left, transparent 100%);
+      &:hover {
+        animation-delay: 0ms;
+        animation-duration: 200ms;
+        animation-name: highlighter-reverse;
+        animation-timing-function: ease-in-out;
+      }
+    }
+  }
+}
+.nav-menu-item {
+  a {
+    @extend %content;
+    color: $black;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
 }
