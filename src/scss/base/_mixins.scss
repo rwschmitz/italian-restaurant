@@ -1,57 +1,24 @@
 // Mixin for media queries
-
 @mixin mq($bp) {
   @media (min-width: $bp) {
     @content;
   }
 }
-@mixin highlighter($direction) {
+// Mixin for highlighter
+@mixin highlighter ($direction) {
+  $transparent: 100%;
   @keyframes highlighter {
-    0% {background: linear-gradient(to $direction, transparent 100%);}
-    5% {background: linear-gradient(to $direction, transparent 95%, (lighten($espresso, 50%) 100%));}
-    10% {background: linear-gradient(to $direction, transparent 90%, (lighten($espresso, 50%) 100%));}
-    15% {background: linear-gradient(to $direction, transparent 85%, (lighten($espresso, 50%) 100%));}
-    20% {background: linear-gradient(to $direction, transparent 80%, (lighten($espresso, 50%) 100%));}
-    25% {background: linear-gradient(to $direction, transparent 75%, (lighten($espresso, 50%) 100%));}
-    30% {background: linear-gradient(to $direction, transparent 70%, (lighten($espresso, 50%) 100%));}
-    35% {background: linear-gradient(to $direction, transparent 65%, (lighten($espresso, 50%) 100%));}
-    40% {background: linear-gradient(to $direction, transparent 60%, (lighten($espresso, 50%) 100%));}
-    45% {background: linear-gradient(to $direction, transparent 55%, (lighten($espresso, 50%) 100%));}
-    50% {background: linear-gradient(to $direction, transparent 50%, (lighten($espresso, 50%) 100%));}
-    55% {background: linear-gradient(to $direction, transparent 45%, (lighten($espresso, 50%) 100%));}
-    60% {background: linear-gradient(to $direction, transparent 40%, (lighten($espresso, 50%) 100%));}
-    65% {background: linear-gradient(to $direction, transparent 35%, (lighten($espresso, 50%) 100%));}
-    70% {background: linear-gradient(to $direction, transparent 30%, (lighten($espresso, 50%) 100%));}
-    75% {background: linear-gradient(to $direction, transparent 25%, (lighten($espresso, 50%) 100%));}
-    80% {background: linear-gradient(to $direction, transparent 20%, (lighten($espresso, 50%) 100%));}
-    85% {background: linear-gradient(to $direction, transparent 15%, (lighten($espresso, 50%) 100%));}
-    90% {background: linear-gradient(to $direction, transparent 10%, (lighten($espresso, 50%) 100%));}
-    95% {background: linear-gradient(to $direction, transparent 10%, (lighten($espresso, 50%) 100%));}
-    100% {background: linear-gradient(to $direction, transparent 10%, (lighten($espresso, 50%) 100%));}
+    @for $i from 0% through 100% {
+      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($espresso, 50%) 100%));}
+    }
   }
 }
+// Mixin for highlighter-reverse
 @mixin highlighter-reverse($direction) {
+  $transparent: 100%;
   @keyframes highlighter-reverse {
-    0% {background: linear-gradient(to $direction, transparent 100%);}
-    5% {background: linear-gradient(to $direction, transparent 95%, (lighten($zest, 15%) 100%));}
-    10% {background: linear-gradient(to $direction, transparent 90%, (lighten($zest, 15%) 100%));}
-    15% {background: linear-gradient(to $direction, transparent 85%, (lighten($zest, 15%) 100%));}
-    20% {background: linear-gradient(to $direction, transparent 80%, (lighten($zest, 15%) 100%));}
-    25% {background: linear-gradient(to $direction, transparent 75%, (lighten($zest, 15%) 100%));}
-    30% {background: linear-gradient(to $direction, transparent 70%, (lighten($zest, 15%) 100%));}
-    35% {background: linear-gradient(to $direction, transparent 65%, (lighten($zest, 15%) 100%));}
-    40% {background: linear-gradient(to $direction, transparent 60%, (lighten($zest, 15%) 100%));}
-    45% {background: linear-gradient(to $direction, transparent 55%, (lighten($zest, 15%) 100%));}
-    50% {background: linear-gradient(to $direction, transparent 50%, (lighten($zest, 15%) 100%));}
-    55% {background: linear-gradient(to $direction, transparent 45%, (lighten($zest, 15%) 100%));}
-    60% {background: linear-gradient(to $direction, transparent 40%, (lighten($zest, 15%) 100%));}
-    65% {background: linear-gradient(to $direction, transparent 35%, (lighten($zest, 15%) 100%));}
-    70% {background: linear-gradient(to $direction, transparent 30%, (lighten($zest, 15%) 100%));}
-    75% {background: linear-gradient(to $direction, transparent 25%, (lighten($zest, 15%) 100%));}
-    80% {background: linear-gradient(to $direction, transparent 20%, (lighten($zest, 15%) 100%));}
-    85% {background: linear-gradient(to $direction, transparent 15%, (lighten($zest, 15%) 100%));}
-    90% {background: linear-gradient(to $direction, transparent 10%, (lighten($zest, 15%) 100%));}
-    95% {background: linear-gradient(to $direction, transparent 10%, (lighten($zest, 15%) 100%));}
-    100% {background: linear-gradient(to $direction, transparent 10%, (lighten($zest, 15%) 100%));}
+    @for $i from 0% through 100% {
+      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($zest, 15%) 100%));}
+    }
   }
 }
