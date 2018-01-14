@@ -1,11 +1,9 @@
 // Child to .wrapper
 .footer-wrapper {
-  align-items: center;
   background-color: $coconut-milk;
   display: flex;
   flex-basis: 5%;
   justify-content: space-between;
-  padding: 0.5rem 2.5rem;
 }
 //Child to .footer-wrapper
 .footer-contact {
@@ -13,40 +11,63 @@
   align-items: center;
   color: $black;
   display: flex;
-  flex-basis: 50%;
+  flex-basis: 33%;
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 400;
+  justify-content: space-around;
 }
-// Child to footer-contact
-.footer-container {
+// Child to .footer-contact
+.footer-contact-container {
   display: flex;
-  flex-basis: 100%;
-  justify-content: center;
 }
-// Children to footer-container
+// Children to .footer-contact-container
 .footer-contact--location,
 .footer-contact--tel,
 .footer-contact--hours {
   align-items: center;
-  flex-basis: auto;
-}
-//Child to footer-container
-.footer-icons {
-  align-items: center;
   display: flex;
-  height: 25px;
+  justify-content: center;
+  span {
+    color: $ultra-violet;
+    font-size: 20px;
+    padding: 0 0.5rem;
+  }
+}
+//Child to .footer-contact-container
+.footer-contact-icons {
+  max-height: 25px;
+  max-width: 25px;
   padding: 0 1rem;
   transition: fill 250ms ease-in-out;
-  width: 25px;
   &:hover {
     fill: $ultra-violet;
   }
 }
-// Child to footer-wrapper
+// Child to .footer-wrapper
 .footer-social {
   align-items: center;
   display: flex;
-  flex-basis: 25%;
-  justify-content: space-between;
+  flex-basis: 33%;
+  justify-content: flex-end;
+}
+// Child to .footer-social
+.footer-social-container {
+  display: flex;
+  flex-basis: 75px;
+  justify-content: center;
+}
+//Child to footer-social-container
+.footer-social-icons-container {
+  align-items: center;
+  display: flex;
+  transition: fill 250ms ease-in-out;
+  &:hover {
+    fill: $ultra-violet;
+  }
+}
+.footer-social-icons {
+  display: block;
+  max-height: 30px;
+  max-width: 30px;
 }
