@@ -26,13 +26,37 @@
 .footer-contact--tel,
 .footer-contact--hours {
   align-items: center;
+  animation-delay: 500ms;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  animation-name: highlighter;
+  animation-timing-function: ease-in-out;
+  background: linear-gradient(to left, transparent 100%);
   display: flex;
   justify-content: center;
-  span {
-    color: $ultra-violet;
-    font-size: 20px;
-    padding: 0 0.5rem;
-  }
+}
+@keyframes highlighter {
+  0% {background: linear-gradient(to left, transparent 100%);}
+  5% {background: linear-gradient(to left, transparent 95%, (lighten($yellow, 30%) 100%));}
+  10% {background: linear-gradient(to left, transparent 90%, (lighten($yellow, 30%) 100%));}
+  15% {background: linear-gradient(to left, transparent 85%, (lighten($yellow, 30%) 100%));}
+  20% {background: linear-gradient(to left, transparent 80%, (lighten($yellow, 30%) 100%));}
+  25% {background: linear-gradient(to left, transparent 75%, (lighten($yellow, 30%) 100%));}
+  30% {background: linear-gradient(to left, transparent 70%, (lighten($yellow, 30%) 100%));}
+  35% {background: linear-gradient(to left, transparent 65%, (lighten($yellow, 30%) 100%));}
+  40% {background: linear-gradient(to left, transparent 60%, (lighten($yellow, 30%) 100%));}
+  45% {background: linear-gradient(to left, transparent 55%, (lighten($yellow, 30%) 100%));}
+  50% {background: linear-gradient(to left, transparent 50%, (lighten($yellow, 30%) 100%));}
+  55% {background: linear-gradient(to left, transparent 45%, (lighten($yellow, 30%) 100%));}
+  60% {background: linear-gradient(to left, transparent 40%, (lighten($yellow, 30%) 100%));}
+  65% {background: linear-gradient(to left, transparent 35%, (lighten($yellow, 30%) 100%));}
+  70% {background: linear-gradient(to left, transparent 30%, (lighten($yellow, 30%) 100%));}
+  75% {background: linear-gradient(to left, transparent 25%, (lighten($yellow, 30%) 100%));}
+  80% {background: linear-gradient(to left, transparent 20%, (lighten($yellow, 30%) 100%));}
+  85% {background: linear-gradient(to left, transparent 15%, (lighten($yellow, 30%) 100%));}
+  90% {background: linear-gradient(to left, transparent 10%, (lighten($yellow, 30%) 100%));}
+  95% {background: linear-gradient(to left, transparent 10%, (lighten($yellow, 30%) 100%));}
+  100% {background: linear-gradient(to left, transparent 10%, (lighten($yellow, 30%) 100%));}
 }
 //Child to .footer-contact-container
 .footer-contact-icons {
