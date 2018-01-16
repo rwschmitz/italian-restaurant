@@ -9,7 +9,7 @@
   $transparent: 100%;
   @keyframes highlighter {
     @for $i from 0% through 100% {
-      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($espresso, 50%) 100%));}
+      #{$i} {background: linear-gradient(to $direction, $white #{$transparent - $i}, $zest 0%);}
     }
   }
 }
@@ -18,7 +18,7 @@
   $transparent: 100%;
   @keyframes highlighter-reverse {
     @for $i from 0% through 100% {
-      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($zest, 15%) 100%));}
+      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($warm-sand, 25%) 100%));}
     }
   }
 }

@@ -1,10 +1,11 @@
-@include highlighter(left);
-@include highlighter-reverse(left);
+@include highlighter(right);
+@include highlighter-reverse(right);
 // Child to .wrapper
 .nav-wrapper {
   background-color: $coconut-milk;
   display: flex;
-  flex-basis: 10%;
+  //flex-basis: 10%;
+  flex-basis: auto;
 }
 // Child to .nav-wrapper
 .nav {
@@ -13,14 +14,13 @@
   flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0.25rem 0;
+
 }
 // Child to .nav
 .nav-logo {
   display: flex;
   flex-basis: 100%;
   justify-content: center;
-  padding: 0.25rem 0;
   img {
     height: 7.5%;
     max-height: 7.5%;
@@ -35,20 +35,25 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  max-width: 1600px;
-  padding: 0.25rem 0;
+  //max-width: 1600px;
+  animation-duration: 1000ms;
+  animation-fill-mode: forwards;
+  animation-name: highlighter;
+  //animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
   li {
     a {
-      animation-duration: 250ms;
-      animation-fill-mode: forwards;
-      animation-name: highlighter;
-      animation-timing-function: ease-in-out;
-      background: linear-gradient(to left, transparent 100%);
+      // animation-delay: 1250ms;
+      // animation-duration: 1000ms;
+      // animation-fill-mode: forwards;
+      // animation-name: highlighter-reverse;
+      // animation-timing-function: ease-in-out;
       &:hover {
-        animation-delay: 0ms;
-        animation-duration: 200ms;
-        animation-name: highlighter-reverse;
-        animation-timing-function: ease-in-out;
+        // animation-delay: 0ms;
+        // animation-duration: 200ms;
+        // animation-fill-mode: forwards;
+        // animation-name: highlighter-reverse;
+        // animation-timing-function: ease-in-out;
       }
     }
   }
@@ -56,7 +61,7 @@
 .nav-menu-item {
   a {
     @extend %content;
-    color: $black;
+    color: $white;
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
