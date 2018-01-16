@@ -1,10 +1,8 @@
-@include highlighter(right);
-@include highlighter-reverse(right);
+@include highlighter(left);
 // Child to .wrapper
 .nav-wrapper {
   background-color: $coconut-milk;
   display: flex;
-  //flex-basis: 10%;
   flex-basis: auto;
 }
 // Child to .nav-wrapper
@@ -35,25 +33,13 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  //max-width: 1600px;
-  animation-duration: 1000ms;
-  animation-fill-mode: forwards;
-  animation-name: highlighter;
-  //animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
   li {
     a {
-      // animation-delay: 1250ms;
-      // animation-duration: 1000ms;
-      // animation-fill-mode: forwards;
-      // animation-name: highlighter-reverse;
-      // animation-timing-function: ease-in-out;
       &:hover {
-        // animation-delay: 0ms;
-        // animation-duration: 200ms;
-        // animation-fill-mode: forwards;
-        // animation-name: highlighter-reverse;
-        // animation-timing-function: ease-in-out;
+        animation-duration: 250ms;
+        animation-fill-mode: forwards;
+        animation-name: highlighter;
+        animation-timing-function: ease-in-out;
       }
     }
   }
@@ -61,7 +47,7 @@
 .nav-menu-item {
   a {
     @extend %content;
-    color: $white;
+    color: $black;
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;

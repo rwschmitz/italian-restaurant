@@ -9,7 +9,7 @@
   $transparent: 100%;
   @keyframes highlighter {
     @for $i from 0% through 100% {
-      #{$i} {background: linear-gradient(to $direction, $white #{$transparent - $i}, $zest 0%);}
+      #{$i} {background: linear-gradient(to $direction, $white #{$transparent - $i}, $zest 100%);}
     }
   }
 }
