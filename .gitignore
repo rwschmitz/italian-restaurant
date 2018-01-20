@@ -5,6 +5,7 @@ node_modules
 npm-debug.log
 yarn-error.log
 src/img
+dist/img
 Sale Information
 gulp
 .vscode
