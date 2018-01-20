@@ -126,11 +126,12 @@ body {
   justify-content: space-between;
 }
 
-/* Child to .wrapper */
 .hero-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 90%;
+  flex-basis: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -138,11 +139,8 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-preferred-size: 90%;
-  flex-basis: 90%;
 }
 
-/* Child to .hero-wrapper */
 .hero-middle {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -168,27 +166,24 @@ body {
   padding: 5rem 0;
 }
 
-/* Child to .hero-middle */
 .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
 }
 
-/* Child to .container */
 .hero-headline {
+  border-bottom: 1px solid rgba(240, 237, 229, 0.25);
   color: #f0ede5;
   font-size: 3.125rem;
   letter-spacing: 1rem;
-  border-bottom: 1px solid rgba(240, 237, 229, 0.25);
 }
 
-/* Child to .container */
 .hero-btn {
   background-color: transparent;
   border: 1px solid #f0ede5;

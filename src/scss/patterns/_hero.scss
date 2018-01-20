@@ -1,14 +1,14 @@
-/* Child to .wrapper */
+// Child to .wrapper
 .hero-wrapper {
   display: flex;
+  flex-basis: 90%;
   flex-direction: column;
   justify-content: center;
-  flex-basis: 90%;
 }
-/* Child to .hero-wrapper */
+// Child to .hero-wrapper
 .hero-middle {
   align-items: center;
-  background-image: linear-gradient(rgba($black,.75), rgba($ultra-violet,0.35)), url('../../dist/img/hero2.jpg');
+  background-image: linear-gradient(rgba($black, .75), rgba($ultra-violet, 0.35)), url('../../dist/img/hero2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -18,21 +18,21 @@
   justify-content: center;
   padding: 5rem 0;
 }
-/* Child to .hero-middle */
+// Child to .hero-middle
 .hero-container {
   display: flex;
-  justify-content: center;
   flex-basis: 100%;
+  justify-content: center;
 }
-/* Child to .container */
+// Child to .container
 .hero-headline {
   @extend %headline;
+  border-bottom: 1px solid rgba($coconut-milk, 0.25);
   color: $coconut-milk;
   font-size: 50px;
   letter-spacing: 16px;
-  border-bottom: 1px solid rgba($coconut-milk, 0.25);
 }
-/* Child to .container */
+// Child to .container
 .hero-btn {
   @extend %content;
   background-color: transparent;
@@ -43,7 +43,7 @@
   letter-spacing: 2px;
   padding: 1rem 2rem;
   transition: background-color 250ms ease-in-out;
-    &:hover {
-      background-color: rgba($coconut-milk, 0.25);
+  &:hover {
+    background-color: rgba($coconut-milk, 0.25);
     }
 }
