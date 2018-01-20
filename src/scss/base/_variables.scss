@@ -10,16 +10,23 @@ $blooming-dahlia: #ec9787;
 $cherry-tomato: #e34132;
 $coconut-milk: #f0ede5;
 $emperador: #6c4f3d;
+$espresso: #5f1b1b;
 $harbor-mist: #afb1b4;
 $palace-blue: #3267ad;
 $sailor-blue: #0e3a53;
 $ultra-violet: #5f4b8b;
 $warm-sand: #c0ab8c;
 $white: #fff;
+$yellow: #ff0;
+$zest: #e0781a;
 
 // Font families
-$playfair: 'Playfair Display', serif;
 $lato: 'Lato', sans-serif;
+$playfair: 'Playfair Display', serif;
+<<<<<<< HEAD
+$lato: 'Lato', sans-serif;
+=======
+>>>>>>> develop
 
 // Placeholders
 %headline {
@@ -29,6 +36,7 @@ $lato: 'Lato', sans-serif;
 %content {
   font-family: $lato;
 }
+<<<<<<< HEAD
 
 
 // - Define
@@ -52,3 +60,5 @@ $warm-sand: #c0ab8c;
 
 $playfair: 'Playfair Display', serif;
 $lato: 'Playfair Display', serif;
+=======
+>>>>>>> develop

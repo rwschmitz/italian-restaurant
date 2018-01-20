@@ -4,6 +4,11 @@
 node_modules
 npm-debug.log
 yarn-error.log
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+dist
+>>>>>>> develop
 src/img
 dist/img
 Sale Information
@@ -17,3 +22,9 @@ gulp
 gulpfile.babel.js
 package-lock.json
 package.json
+<<<<<<< HEAD
+=======
+=======
+
+>>>>>>> 57d1edb2dd6f55445dc2aaf69dd62e67f153285d
+>>>>>>> develop
