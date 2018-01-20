@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Mixin for media queries
 @mixin mq($bp) {
   @media (min-width: $bp) {
@@ -23,17 +22,3 @@
     }
   }
 }
-=======
-/*-------------------------
-
-- Define media queries here
-
--------------------------*/
-
-
-@mixin mq($bp) {
-    @media (min-width: $bp) {
-        @content;
-    }
-}
->>>>>>> 57d1edb2dd6f55445dc2aaf69dd62e67f153285d
