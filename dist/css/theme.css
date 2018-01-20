@@ -147,8 +147,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(95, 75, 139, 0.35))), url("/dist/img/hero2.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(95, 75, 139, 0.35)), url("/dist/img/hero2.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(95, 75, 139, 0.35))), url("./dist/img/hero2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(95, 75, 139, 0.35)), url("./dist/img/hero2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
