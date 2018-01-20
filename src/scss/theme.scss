@@ -8,13 +8,3 @@
 @import 'patterns/footer';
 @import 'patterns/hero';
 @import 'patterns/nav';
-/*------------------------------------
-
-- Only import Sass files to theme.scss
-
-------------------------------------*/
-
-@import 'base/mixins';
-@import 'base/variables';
-
-@import 'patterns/body';
