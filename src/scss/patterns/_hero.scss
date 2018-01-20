@@ -1,9 +1,9 @@
 // Child to .wrapper
 .hero-wrapper {
   display: flex;
-  flex-basis: 90%;
   flex-direction: column;
   justify-content: center;
+  width: 90%;
 }
 // Child to .hero-wrapper
 .hero-middle {
@@ -12,17 +12,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-basis: 100%;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   padding: 5rem 0;
+  width: 100%;
 }
 // Child to .hero-middle
 .hero-container {
   display: flex;
-  flex-basis: 100%;
   justify-content: center;
+  width: 100%;
 }
 // Child to .container
 .hero-headline {

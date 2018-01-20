@@ -2,36 +2,34 @@
 .nav-wrapper {
   background-color: $coconut-milk;
   display: flex;
-  flex-basis: auto;
+  height: 5%;
+  padding: 0.5rem 0;
+  width: auto;
 }
 // Child to .nav-wrapper
 .nav {
   align-items: center;
   display: flex;
-  flex-basis: 100%;
   flex-wrap: wrap;
   justify-content: center;
-
+  width: 100%;
 }
 // Child to .nav
 .nav-logo {
   display: flex;
-  flex-basis: 100%;
+  height: 100%;
   justify-content: center;
-  img {
-    height: 7.5%;
-    max-height: 7.5%;
-    max-width: 7.5%;
-    width: 7.5%;
-  }
+  max-height: 100%;
+  max-width: auto;
+  width: auto;
 }
 // Child to .nav
 .nav-menu {
   display: flex;
-  flex-basis: 100%;
   justify-content: space-around;
   list-style: none;
   margin: 0;
+  width: 100%;
 }
 .nav-menu-item {
   a {

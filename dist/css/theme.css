@@ -29,7 +29,7 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.footer-contact,
+.footer-contact-container,
 .hero-btn,
 .nav-menu-item a {
   font-family: "Lato", sans-serif;
@@ -48,35 +48,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 5%;
-  flex-basis: 5%;
+  height: 5%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.footer-contact {
+.footer-contact-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 1px solid red;
   color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   font-size: 0.875rem;
   font-weight: 400;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-}
-
-.footer-contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: auto;
 }
 
 .footer-contact--location,
@@ -116,35 +109,25 @@ body {
   fill: #ae3232;
 }
 
-.footer-social {
+.footer-social-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 33%;
-  flex-basis: 33%;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-}
-
-.footer-social-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-preferred-size: 75px;
-  flex-basis: 75px;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  width: 50%;
 }
 
 .footer-social-icons-container {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  border: 2px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -167,8 +150,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 90%;
-  flex-basis: 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -176,6 +157,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 90%;
 }
 
 .hero-middle {
@@ -189,8 +171,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -201,17 +181,17 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 5rem 0;
+  width: 100%;
 }
 
 .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
 }
 
 .hero-headline {
@@ -241,8 +221,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+  height: 5%;
+  padding: 0.5rem 0;
+  width: auto;
 }
 
 .nav {
@@ -252,42 +233,36 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  width: 100%;
 }
 
 .nav-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+  height: 100%;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-.nav-logo img {
-  height: 7.5%;
-  max-height: 7.5%;
-  max-width: 7.5%;
-  width: 7.5%;
+  max-height: 100%;
+  max-width: auto;
+  width: auto;
 }
 
 .nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
   margin: 0;
+  width: 100%;
 }
 
 .nav-menu-item a {
