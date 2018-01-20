@@ -2,28 +2,5 @@
 @mixin mq($bp) {
   @media (min-width: $bp) {
     @content;
-<<<<<<< HEAD
     }
 }
-=======
-  }
-}
-// Mixin for highlighter
-@mixin highlighter ($direction) {
-  $transparent: 100%;
-  @keyframes highlighter {
-    @for $i from 0% through 100% {
-      #{$i} {background: linear-gradient(to $direction, $white #{$transparent - $i}, $zest 100%);}
-    }
-  }
-}
-// Mixin for highlighter-reverse
-@mixin highlighter-reverse($direction) {
-  $transparent: 100%;
-  @keyframes highlighter-reverse {
-    @for $i from 0% through 100% {
-      #{$i} {background: linear-gradient(to $direction, transparent #{$transparent - $i}, (lighten($warm-sand, 25%) 100%));}
-    }
-  }
-}
->>>>>>> develop

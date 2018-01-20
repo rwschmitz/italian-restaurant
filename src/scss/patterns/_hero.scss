@@ -8,11 +8,7 @@
 // Child to .hero-wrapper
 .hero-middle {
   align-items: center;
-<<<<<<< HEAD
   background-image: linear-gradient(rgba($black, .75), rgba($ultra-violet, 0.35)), url('../../dist/img/hero2.jpg');
-=======
-  background-image: linear-gradient(rgba($black, .75), rgba($espresso, 0.3)), url('../img/hero2.jpg');
->>>>>>> develop
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -49,9 +45,5 @@
   transition: background-color 250ms ease-in-out;
   &:hover {
     background-color: rgba($coconut-milk, 0.25);
-<<<<<<< HEAD
     }
-=======
-  }
->>>>>>> develop
 }
