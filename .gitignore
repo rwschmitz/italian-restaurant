@@ -4,7 +4,6 @@
 node_modules
 npm-debug.log
 yarn-error.log
-dist
 src/img
 Sale Information
 gulp
@@ -17,4 +16,3 @@ gulp
 gulpfile.babel.js
 package-lock.json
 package.json
-
