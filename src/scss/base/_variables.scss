@@ -19,7 +19,7 @@ $white: #fff;
 
 // Font families
 $playfair: 'Playfair Display', serif;
-$raleway: 'Raleway', sans-serif;
+$lato: 'Lato', sans-serif;
 
 // Placeholders
 %headline {
@@ -27,7 +27,7 @@ $raleway: 'Raleway', sans-serif;
 }
 
 %content {
-  font-family: $raleway;
+  font-family: $lato;
 }
 
 
@@ -51,4 +51,4 @@ $warm-sand: #c0ab8c;
 // Font families
 
 $playfair: 'Playfair Display', serif;
-$raleway: 'Raleway', sans-serif;
+$lato: 'Playfair Display', serif;
