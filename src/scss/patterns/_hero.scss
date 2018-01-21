@@ -2,20 +2,19 @@
 .hero-wrapper {
   align-items: center;
   background-image: linear-gradient(rgba($black, .75), rgba($ultra-violet, 0.35)), url('../../dist/img/hero2.jpg');
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  height: 85%;
+  height: 50%;
   justify-content: center;
-  position: relative;
   width: 100%;
 }
 // Child to .hero-wrapper
 .hero-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -24,25 +23,72 @@
   @extend %headline;
   border-bottom: 1px solid rgba($coconut-milk, 0.25);
   color: $coconut-milk;
-  font-size: 50px;
-  letter-spacing: 16px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 // Child to .hero-container
 .hero-btn {
   @extend %content;
-  @include slide(bounce-in, 500ms, 1000ms, 0%, -250%);
   background-color: transparent;
   border: 1px solid $coconut-milk;
   color: $coconut-milk;
   cursor: pointer;
-  font-size: 24px;
-  left: 50%;
+  font-size: 14px;
   letter-spacing: 2px;
-  opacity: 0;
+  opacity: 1;
   padding: 1rem 2rem;
-  position: absolute;
   transition: background-color 250ms ease-in-out;
   &:hover {
     background-color: rgba($coconut-milk, 0.25);
     }
+}
+@include mq(960px) {
+  // Child to .wrapper
+  .hero-wrapper {
+    align-items: center;
+    background-image: linear-gradient(rgba($black, .75), rgba($ultra-violet, 0.35)), url('../../dist/img/hero2.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 85%;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  // Child to .hero-wrapper
+  .hero-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  // Child to .hero-container
+  .hero-headline {
+    border-bottom: 1px solid rgba($coconut-milk, 0.25);
+    color: $coconut-milk;
+    font-size: 50px;
+    letter-spacing: 16px;
+  }
+  // Child to .hero-container
+  .hero-btn {
+    @include slide(bounce-in, 500ms, 1000ms, 0%, -250%);
+    background-color: transparent;
+    border: 1px solid $coconut-milk;
+    color: $coconut-milk;
+    cursor: pointer;
+    font-size: 24px;
+    left: 50%;
+    letter-spacing: 2px;
+    opacity: 0;
+    padding: 1rem 2rem;
+    position: absolute;
+    transition: background-color 250ms ease-in-out;
+    &:hover {
+      background-color: rgba($coconut-milk, 0.25);
+    }
+  }
 }
