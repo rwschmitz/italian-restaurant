@@ -1,11 +1,33 @@
 .hide-mobile {
   display: none;
 }
-.is-mobile {
-  display: none;
-}
 .text-mobile {
   color: lighten($espresso, 30%);
+}
+.is-mobile {
+  @extend %content;
+  color: red;
+  position: relative;
+  .nav-menu-icon {
+    fill: green;
+    height: 25px;
+    max-height: 25px;
+    max-width: 25px;
+    width: 25px;
+  }
+}
+.is-active {
+  background-color: $yellow;
+  display: flex;
+  left: 0;
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  .nav-menu-item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 }
 @include mq(960px) {
   .hide-mobile {

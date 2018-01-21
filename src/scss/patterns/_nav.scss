@@ -3,7 +3,6 @@
   background-color: $coconut-milk;
   display: flex;
   flex-wrap: wrap;
-  //height: auto;
   justify-content: center;
   max-width: 1600px;
   width: 100%;
@@ -19,12 +18,13 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
-  padding: 0 5rem;
+  position: initial;
   width: 100%;
 }
 // Child to .nav-menu
 .nav-menu-item {
   @extend %content;
+  display: none;
   a {
     color: $black;
     font-size: 16px;
