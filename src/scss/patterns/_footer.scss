@@ -17,6 +17,7 @@
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 400;
+  padding: 0.5rem 0;
   width: 100%;
 }
 // Child to .footer-contact-container
@@ -25,9 +26,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0.5rem 0;
   text-decoration: none;
   width: 100%;
-
 }
 // Children to .footer-contact-icons-container
 .footer-contact-icons {
@@ -78,7 +79,6 @@
   width: 25px;
 }
 @include mq(960px) {
-  .footer-contact-container,
   .footer-contact-icons-container,
   .footer-social-container,
   .footer-social-icons-container,
@@ -142,5 +142,44 @@
   }
   .footer-social-icons {
     padding: 0;
+  }
+}
+@include mq(1280px) {
+  .footer-wrapper {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .footer-contact-container {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 0;
+    width: 85%;
+  }
+  .footer-contact-icons-container {
+    justify-content: flex-start;
+    width: auto;
+  }
+  .footer-contact-icons {
+    padding: 0 0.5rem;
+  }
+  .footer-contact--location,
+  .footer-contact--tel,
+  .footer-contact--hours {
+    padding: 0;
+  }
+  .footer-social-container {
+    justify-content: space-around;
+    padding: 0;
+    width: auto;
+  }
+  .footer-social-icons {
+    padding: 0 1rem;
+  }
+}
+@include mq(1600px) {
+  .footer-contact-container {
+    justify-content: space-around;
+    padding: 0 2rem;
+    width: 100%;
   }
 }

@@ -3,6 +3,7 @@
 }
 .text-mobile {
   color: lighten($espresso, 30%);
+  padding: 0.5rem 0;
 }
 .is-mobile {
   @extend %content;
