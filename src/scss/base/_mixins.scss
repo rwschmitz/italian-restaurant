@@ -4,3 +4,24 @@
     @content;
     }
 }
+
+// Mixin to slide content
+@mixin slide($name, $delay, $duration, $start, $end) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+  animation-name: $name;
+  animation-timing-function: ease;
+  @keyframes #{$name} {
+    0% {
+      bottom: 0;
+      opacity: 0;
+      transform: translate(-50%, $start);
+    }
+    100% {
+      bottom: 0;
+      opacity: 1;
+      transform: translate(-50%, $end);
+    }
+  }
+}
