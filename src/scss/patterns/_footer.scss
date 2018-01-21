@@ -4,18 +4,18 @@
   display: flex;
   height: 5%;
   justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
 }
 //Child to .footer-wrapper
 .footer-contact-container {
   @extend %content;
   align-items: center;
-  border: 1px solid red;
   color: $black;
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
   font-weight: 400;
-  justify-content: space-around;
   width: auto;
 }
 // Children to .footer-contact-container
@@ -30,13 +30,13 @@
   background: linear-gradient(to left, transparent 100%);
   display: flex;
   justify-content: center;
+  padding: 0 1rem;
 }
 //Child to .footer-contact-container
 .footer-contact-icons {
   height: 25px;
   max-height: 25px;
   max-width: 20px;
-  padding: 0 1rem;
   transition: fill 250ms ease-in-out;
   width: 20px;
   &:hover {
@@ -46,15 +46,13 @@
 // Child to .footer-wrapper
 .footer-social-container {
   align-items: center;
-  border: 1px solid green;
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: auto;
 }
 //Child to footer-social-container
 .footer-social-icons-container {
   align-items: center;
-  border: 2px solid red;
   display: flex;
   transition: fill 250ms ease-in-out;
   &:hover {
@@ -66,5 +64,6 @@
   height: 25px;
   max-height: 25px;
   max-width: 25px;
+  padding: 0 1rem;
   width: 25px;
 }

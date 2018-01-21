@@ -5,6 +5,9 @@ h2,
 h3,
 h4,
 h5,
+ul,
+li,
+a,
 p {
   margin: 0;
   padding: 0;
@@ -15,5 +18,7 @@ body {
 }
 .wrapper {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: center;
 }

@@ -1,30 +1,24 @@
 // Child to .wrapper
 .hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 90%;
-}
-// Child to .hero-wrapper
-.hero-middle {
   align-items: center;
   background-image: linear-gradient(rgba($black, .75), rgba($ultra-violet, 0.35)), url('../../dist/img/hero2.jpg');
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height: 85%;
   justify-content: center;
-  padding: 5rem 0;
   width: 100%;
 }
-// Child to .hero-middle
+// Child to .hero-wrapper
 .hero-container {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-// Child to .container
+// Child to .hero-container
 .hero-headline {
   @extend %headline;
   border-bottom: 1px solid rgba($coconut-milk, 0.25);
@@ -32,7 +26,7 @@
   font-size: 50px;
   letter-spacing: 16px;
 }
-// Child to .container
+// Child to .hero-container
 .hero-btn {
   @extend %content;
   background-color: transparent;

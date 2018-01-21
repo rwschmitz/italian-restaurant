@@ -1,27 +1,16 @@
 // Child to .wrapper
-.nav-wrapper {
+.nav {
   background-color: $coconut-milk;
   display: flex;
-  height: 5%;
-  padding: 0.5rem 0;
-  width: auto;
-}
-// Child to .nav-wrapper
-.nav {
-  align-items: center;
-  display: flex;
   flex-wrap: wrap;
+  height: 10%;
   justify-content: center;
+  max-width: 1600px;
   width: 100%;
-}
-// Child to .nav
-.nav-logo {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  max-height: 100%;
-  max-width: auto;
-  width: auto;
+  img {
+    height: 50%;
+    width: auto;
+  }
 }
 // Child to .nav
 .nav-menu {
@@ -29,14 +18,20 @@
   justify-content: space-around;
   list-style: none;
   margin: 0;
+  padding: 0 5rem;
   width: 100%;
 }
+// Child to .nav-menu
 .nav-menu-item {
+  @extend %content;
   a {
-    @extend %content;
     color: $black;
     font-size: 16px;
     letter-spacing: 2px;
     text-decoration: none;
+    transition: color 300ms ease-in-out;
+    &:hover {
+      color: $yellow;
+    }
   }
 }
