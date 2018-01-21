@@ -45,7 +45,7 @@
     background-color: rgba($coconut-milk, 0.25);
     }
 }
-@include mq(960px) {
+@include mq(1024px) {
   // Child to .wrapper
   .hero-wrapper {
     align-items: center;

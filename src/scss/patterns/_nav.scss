@@ -1,13 +1,14 @@
 // Child to .wrapper
 .nav {
+  align-items: center;
   background-color: $coconut-milk;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 1600px;
   width: 100%;
   img {
-    height: 10%;
+    height: 100%;
     width: auto;
   }
 }
@@ -24,11 +25,12 @@
 // Child to .nav-menu
 .nav-menu-item {
   @extend %content;
+  color: $white;
   display: none;
+  padding: 0.5rem 0;
   a {
-    color: $black;
+    color: $white;
     font-size: 16px;
-    letter-spacing: 2px;
     text-decoration: none;
     transition: color 300ms ease, border-bottom 300ms ease;
     &:hover,
@@ -38,7 +40,7 @@
     }
   }
 }
-@include mq(960px) {
+@include mq(1024px) {
   // Child to .wrapper
   .nav {
     background-color: $coconut-milk;
@@ -59,16 +61,17 @@
     justify-content: space-around;
     list-style: none;
     margin: 0;
-    padding: 0 5rem;
+    padding: 0;
     width: 100%;
   }
   // Child to .nav-menu
   .nav-menu-item {
+    color: $black;
     display: flex;
+    padding: 0 0.5rem;
     a {
       color: $black;
       font-size: 16px;
-      letter-spacing: 2px;
       text-decoration: none;
       transition: color 300ms ease, border-bottom 300ms ease;
       &:hover,

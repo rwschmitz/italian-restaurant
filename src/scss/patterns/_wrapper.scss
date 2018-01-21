@@ -4,7 +4,7 @@
   height: 100%;
   justify-content: center;
 }
-@include mq(960px) {
+@include mq(1024px) {
   .wrapper {
     display: flex;
     flex-wrap: wrap;
