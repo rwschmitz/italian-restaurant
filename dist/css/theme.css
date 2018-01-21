@@ -203,8 +203,8 @@ body {
 }
 
 .hero-btn {
-  -webkit-animation-delay: 250ms;
-          animation-delay: 250ms;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
   -webkit-animation-duration: 1000ms;
           animation-duration: 1000ms;
   -webkit-animation-fill-mode: forwards;
