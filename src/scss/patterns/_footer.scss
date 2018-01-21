@@ -43,11 +43,6 @@
 .footer-contact--tel,
 .footer-contact--hours {
   align-items: center;
-  animation-duration: 500ms;
-  animation-fill-mode: forwards;
-  animation-name: highlighter;
-  animation-timing-function: ease-in-out;
-  background: linear-gradient(to left, transparent 100%);
   color: $black;
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +52,6 @@
   width: 100%;
   span {
     line-height: 1.5;
-    padding: 0.25rem 0;
     text-align: center;
     width: 100%;
   }
@@ -74,10 +68,6 @@
   align-items: center;
   display: flex;
   flex-wrap: wrap;
-  transition: fill 300ms ease-in-out;
-  &:hover {
-    fill: lighten($espresso, 20%);
-  }
 }
 // Child to .footer-social-icons-container
 .footer-social-icons {
@@ -88,73 +78,69 @@
   width: 25px;
 }
 @include mq(960px) {
-  .footer-wrapper {
-    background-color: $coconut-milk;
-    display: flex;
-    height: 5%;
-    justify-content: space-between;
-    max-width: 1600px;
-    width: 100%;
-  }
-  .footer-contact-container {
-    align-items: center;
-    color: $black;
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 14px;
-    font-weight: 400;
-    width: auto;
-  }
+  .footer-contact-container,
+  .footer-contact-icons-container,
+  .footer-social-container,
+  .footer-social-icons-container,
   .footer-contact--location,
   .footer-contact--tel,
   .footer-contact--hours {
-    align-items: center;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-    animation-name: highlighter;
-    animation-timing-function: ease-in-out;
-    background: linear-gradient(to left, transparent 100%);
-    color: $black;
-    display: flex;
+    flex-wrap: nowrap;
+  }
+  .footer-wrapper {
+    height: auto;
     justify-content: center;
-    padding: 0 1rem;
-    text-decoration: none;
-    transition: color 300ms ease-in-out;
-    &:hover {
-      color: lighten($espresso, 20%);
-    }
+  }
+  .footer-contact-container {
+    flex-wrap: wrap;
+    font-size: 14px;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 75%;
+  }
+  .footer-contact-icons-container {
+    justify-content: flex-start;
+    width: 100%;
   }
   .footer-contact-icons {
-    cursor: pointer;
-    height: 25px;
-    max-height: 25px;
-    max-width: 20px;
+    max-width: auto;
     transition: fill 300ms ease-in-out;
-    width: 20px;
+    width: auto;
     &:hover {
       fill: lighten($espresso, 20%);
     }
   }
+  .footer-contact--location,
+  .footer-contact--tel,
+  .footer-contact--hours {
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+    animation-name: highlighter;
+    animation-timing-function: ease-in-out;
+    transition: color 300ms ease-in-out;
+    width: auto;
+    span {
+      line-height: 1.5;
+      text-align: center;
+      width: auto;
+    }
+    &:hover {
+      color: lighten($espresso, 20%);
+    }
+  }
   .footer-social-container {
     align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    width: auto;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 75%;
   }
   .footer-social-icons-container {
-    align-items: center;
-    display: flex;
     transition: fill 300ms ease-in-out;
     &:hover {
       fill: lighten($espresso, 20%);
     }
   }
   .footer-social-icons {
-    display: block;
-    height: 25px;
-    max-height: 25px;
-    max-width: 25px;
-    padding: 0 1rem;
-    width: 25px;
+    padding: 0;
   }
 }

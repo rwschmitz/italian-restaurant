@@ -64,6 +64,7 @@
   }
   // Child to .nav-menu
   .nav-menu-item {
+    display: flex;
     a {
       color: $black;
       font-size: 16px;

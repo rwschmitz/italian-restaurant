@@ -101,16 +101,6 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-name: highlighter;
-          animation-name: highlighter;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  background: -webkit-gradient(linear, right top, left top, to(transparent));
-  background: linear-gradient(to left, transparent 100%);
   color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,7 +118,6 @@ body {
 .footer-contact--tel span,
 .footer-contact--hours span {
   line-height: 1.5;
-  padding: 0.25rem 0;
   text-align: center;
   width: 100%;
 }
@@ -154,11 +143,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-transition: fill 300ms ease-in-out;
-          transition: fill 300ms ease-in-out;
-}
-.footer-social-icons-container:hover {
-  fill: #ae3232;
 }
 
 .footer-social-icons {
@@ -170,38 +154,50 @@ body {
 }
 
 @media (min-width: 960px) {
+  .footer-contact-container,
+  .footer-contact-icons-container,
+  .footer-social-container,
+  .footer-social-icons-container,
+  .footer-contact--location,
+  .footer-contact--tel,
+  .footer-contact--hours {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
   .footer-wrapper {
-    background-color: #f0ede5;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 5%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    max-width: 1600px;
-    width: 100%;
+    height: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .footer-contact-container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: #000000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     font-size: 0.875rem;
-    font-weight: 400;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 1rem 0;
+    width: 75%;
+  }
+  .footer-contact-icons-container {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .footer-contact-icons {
+    max-width: auto;
+    -webkit-transition: fill 300ms ease-in-out;
+            transition: fill 300ms ease-in-out;
     width: auto;
+  }
+  .footer-contact-icons:hover {
+    fill: #ae3232;
   }
   .footer-contact--location,
   .footer-contact--tel,
   .footer-contact--hours {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-animation-duration: 500ms;
             animation-duration: 500ms;
     -webkit-animation-fill-mode: forwards;
@@ -210,56 +206,33 @@ body {
             animation-name: highlighter;
     -webkit-animation-timing-function: ease-in-out;
             animation-timing-function: ease-in-out;
-    background: -webkit-gradient(linear, right top, left top, to(transparent));
-    background: linear-gradient(to left, transparent 100%);
-    color: #000000;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 0 1rem;
-    text-decoration: none;
     -webkit-transition: color 300ms ease-in-out;
             transition: color 300ms ease-in-out;
+    width: auto;
+  }
+  .footer-contact--location span,
+  .footer-contact--tel span,
+  .footer-contact--hours span {
+    line-height: 1.5;
+    text-align: center;
+    width: auto;
   }
   .footer-contact--location:hover,
   .footer-contact--tel:hover,
   .footer-contact--hours:hover {
     color: #ae3232;
   }
-  .footer-contact-icons {
-    cursor: pointer;
-    height: 25px;
-    max-height: 25px;
-    max-width: 20px;
-    -webkit-transition: fill 300ms ease-in-out;
-            transition: fill 300ms ease-in-out;
-    width: 20px;
-  }
-  .footer-contact-icons:hover {
-    fill: #ae3232;
-  }
   .footer-social-container {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    width: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 75%;
   }
   .footer-social-icons-container {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-transition: fill 300ms ease-in-out;
             transition: fill 300ms ease-in-out;
   }
@@ -267,12 +240,7 @@ body {
     fill: #ae3232;
   }
   .footer-social-icons {
-    display: block;
-    height: 25px;
-    max-height: 25px;
-    max-width: 25px;
-    padding: 0 1rem;
-    width: 25px;
+    padding: 0;
   }
 }
 
@@ -513,6 +481,11 @@ body {
     padding: 0 5rem;
     width: 100%;
   }
+  .nav-menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .nav-menu-item a {
     color: #000000;
     font-size: 1rem;
@@ -566,13 +539,6 @@ body {
   color: red;
   position: relative;
 }
-.is-mobile .nav-menu-icon {
-  fill: green;
-  height: 25px;
-  max-height: 25px;
-  max-width: 25px;
-  width: 25px;
-}
 
 .is-active {
   background-color: #ffc600;
@@ -594,13 +560,27 @@ body {
   width: 100%;
 }
 
+.nav-menu-icon {
+  fill: #cb4848;
+  height: 25px;
+  max-height: 25px;
+  max-width: 25px;
+  width: 25px;
+}
+
 @media (min-width: 960px) {
   .hide-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
   }
   .text-mobile {
+    color: #000000;
+    display: inline-block;
     font-weight: 400;
+    padding: 0;
+  }
+  .is-mobile,
+  .is-active,
+  .nav-menu-icon {
+    display: none;
   }
 }

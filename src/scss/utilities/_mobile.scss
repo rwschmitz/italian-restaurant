@@ -8,13 +8,6 @@
   @extend %content;
   color: red;
   position: relative;
-  .nav-menu-icon {
-    fill: green;
-    height: 25px;
-    max-height: 25px;
-    max-width: 25px;
-    width: 25px;
-  }
 }
 .is-active {
   background-color: $yellow;
@@ -29,11 +22,26 @@
     width: 100%;
   }
 }
+.nav-menu-icon {
+  fill: lighten($espresso, 30%);
+  height: 25px;
+  max-height: 25px;
+  max-width: 25px;
+  width: 25px;
+}
 @include mq(960px) {
   .hide-mobile {
-    display: flex;
+    display: inline-block;
   }
   .text-mobile {
+    color: $black;
+    display: inline-block;
     font-weight: 400;
+    padding: 0;
+  }
+  .is-mobile,
+  .is-active,
+  .nav-menu-icon {
+    display: none;
   }
 }
