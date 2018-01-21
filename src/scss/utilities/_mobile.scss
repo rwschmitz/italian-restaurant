@@ -1,0 +1,17 @@
+.hide-mobile {
+  display: none;
+}
+.is-mobile {
+  display: none;
+}
+.text-mobile {
+  color: lighten($espresso, 30%);
+}
+@include mq(960px) {
+  .hide-mobile {
+    display: flex;
+  }
+  .text-mobile {
+    font-weight: 400;
+  }
+}

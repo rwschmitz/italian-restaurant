@@ -3,12 +3,12 @@
   background-color: $coconut-milk;
   display: flex;
   flex-wrap: wrap;
-  height: 10%;
+  //height: auto;
   justify-content: center;
   max-width: 1600px;
   width: 100%;
   img {
-    height: 50%;
+    height: 10%;
     width: auto;
   }
 }
