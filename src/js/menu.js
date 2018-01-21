@@ -6,4 +6,4 @@ function toggleMenu () {
   navMenu.classList.toggle('is-active');
 }
 
-menuIcon.addEventListener('touch', toggleMenu, false);
+menuIcon.addEventListener('click', toggleMenu, false);
