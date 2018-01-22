@@ -1,13 +1,13 @@
 // Only import files to theme.scss
 
+@import 'alpha/variables';
+
 @import 'base/defaults';
 @import 'base/mixins';
-@import 'base/variables';
+@import 'base/mobile';
 
 @import 'patterns/body';
 @import 'patterns/footer';
 @import 'patterns/hero';
 @import 'patterns/nav';
 @import 'patterns/wrapper';
-
-@import 'utilities/mobile';
