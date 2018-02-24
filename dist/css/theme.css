@@ -553,9 +553,12 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  height: auto;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  max-height: 5%;
   max-width: 1600px;
+  padding: 1rem 0;
   width: 100%;
 }
 .nav img {
@@ -607,7 +610,9 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    max-height: 100%;
     max-width: 1600px;
+    padding: 0;
     width: 100%;
   }
   .nav img {

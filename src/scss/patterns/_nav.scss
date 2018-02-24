@@ -4,8 +4,11 @@
   background-color: $coconut-milk;
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   justify-content: space-around;
+  max-height: 5%;
   max-width: 1600px;
+  padding: 1rem 0;
   width: 100%;
   img {
     height: 100%;
@@ -48,7 +51,9 @@
     flex-wrap: wrap;
     height: 10%;
     justify-content: center;
+    max-height: 100%;
     max-width: 1600px;
+    padding: 0;
     width: 100%;
     img {
       height: 50%;
