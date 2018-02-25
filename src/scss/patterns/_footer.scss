@@ -62,6 +62,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 1rem 0;
   width: 100%;
 }
 // Child to footer-social-container
@@ -77,6 +78,11 @@
   max-width: 25px;
   padding: 0 1rem;
   width: 25px;
+}
+@include mq(800px) {
+  .footer-social-container {
+    padding: 1rem 10rem;
+  }
 }
 @include mq(1024px) {
   .footer-contact-icons-container,
@@ -103,12 +109,9 @@
     width: 100%;
   }
   .footer-contact-icons {
+    cursor: initial;
     max-width: auto;
-    transition: fill 300ms ease-in-out;
     width: auto;
-    &:hover {
-      fill: lighten($espresso, 20%);
-    }
   }
   .footer-contact--location,
   .footer-contact--tel,
@@ -117,6 +120,7 @@
     animation-fill-mode: forwards;
     animation-name: highlighter;
     animation-timing-function: ease-in-out;
+    cursor: pointer;
     transition: color 300ms ease-in-out;
     width: auto;
     span {
@@ -142,6 +146,9 @@
   }
   .footer-social-icons {
     padding: 0;
+  }
+  .footer-order {
+    order: -1;
   }
 }
 @include mq(1280px) {
@@ -174,6 +181,9 @@
   }
   .footer-social-icons {
     padding: 0 1rem;
+  }
+  .footer-order {
+    order: 0;
   }
 }
 @include mq(1600px) {

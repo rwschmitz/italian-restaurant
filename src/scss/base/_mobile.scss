@@ -17,7 +17,7 @@
   display: flex;
   left: 0;
   position: absolute;
-  top: 0;
+  top: 100px;
   width: 100%;
   .nav-menu-item {
     display: flex;
@@ -31,7 +31,7 @@
   }
   100% {
     opacity: 0.95;
-    top: 39px;
+    top: 55px;
   }
 }
 .nav-menu-icon {
@@ -42,6 +42,17 @@
   max-height: 25px;
   max-width: 25px;
   width: 25px;
+}
+@include mq(800px) {
+  @keyframes menu-slide-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.95;
+      top: 71px;
+    }
+  }
 }
 @include mq(1024px) {
   .hide-mobile {
