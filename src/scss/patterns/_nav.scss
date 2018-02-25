@@ -39,7 +39,7 @@
     &:hover,
     &:active,
     &:focus {
-      color: lighten($espresso, 30%);
+      color: $black;
     }
   }
 }

@@ -632,7 +632,7 @@ body {
 .nav-menu-item a:hover,
 .nav-menu-item a:active,
 .nav-menu-item a:focus {
-  color: #cb4848;
+  color: #000000;
 }
 
 @media (min-width: 1024px) {
