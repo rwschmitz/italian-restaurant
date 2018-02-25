@@ -14,14 +14,12 @@
   animation-timing-function: ease;
   @keyframes #{$name} {
     0% {
-      bottom: 0;
+      bottom: $start;
       opacity: 0;
-      transform: translate(-50%, $start);
     }
     100% {
-      bottom: 0;
+      bottom: $end;
       opacity: 1;
-      transform: translate(-50%, $end);
     }
   }
 }

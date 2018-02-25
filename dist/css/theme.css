@@ -452,6 +452,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  position: relative;
   width: 100%;
 }
 
@@ -475,6 +476,7 @@ body {
   letter-spacing: 0.125rem;
   opacity: 1;
   padding: 1rem 2rem;
+  text-decoration: none;
   -webkit-transition: background-color 250ms ease-in-out;
           transition: background-color 250ms ease-in-out;
 }
@@ -505,7 +507,6 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    position: relative;
     width: 100%;
   }
   .hero-container {
@@ -530,49 +531,36 @@ body {
             animation-duration: 1000ms;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-name: bounce-in;
-            animation-name: bounce-in;
+    -webkit-animation-name: menu-btn;
+            animation-name: menu-btn;
     -webkit-animation-timing-function: ease;
             animation-timing-function: ease;
     background-color: transparent;
-    border: 1px solid #f0ede5;
-    color: #f0ede5;
-    cursor: pointer;
     font-size: 1.5rem;
     left: 50%;
-    letter-spacing: 0.125rem;
     opacity: 0;
-    padding: 1rem 2rem;
     position: absolute;
-    -webkit-transition: background-color 250ms ease-in-out;
-            transition: background-color 250ms ease-in-out;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
-  @-webkit-keyframes bounce-in {
+  @-webkit-keyframes menu-btn {
     0% {
-      bottom: 0;
+      bottom: -350%;
       opacity: 0;
-      -webkit-transform: translate(-50%, 0%);
-              transform: translate(-50%, 0%);
     }
     100% {
-      bottom: 0;
+      bottom: -200%;
       opacity: 1;
-      -webkit-transform: translate(-50%, -250%);
-              transform: translate(-50%, -250%);
     }
   }
-  @keyframes bounce-in {
+  @keyframes menu-btn {
     0% {
-      bottom: 0;
+      bottom: -350%;
       opacity: 0;
-      -webkit-transform: translate(-50%, 0%);
-              transform: translate(-50%, 0%);
     }
     100% {
-      bottom: 0;
+      bottom: -200%;
       opacity: 1;
-      -webkit-transform: translate(-50%, -250%);
-              transform: translate(-50%, -250%);
     }
   }
   .hero-btn:hover {
