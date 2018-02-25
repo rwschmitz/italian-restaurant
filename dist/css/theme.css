@@ -591,11 +591,12 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   max-height: 5%;
   max-width: 1600px;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   position: relative;
   width: 100%;
 }
