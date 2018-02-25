@@ -1,0 +1,3 @@
+<?php include('header.php') ?>
+well obviously...
+<?php include('footer.php') ?>
