@@ -49,6 +49,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: 0 2rem;
+  text-align: center;
   text-decoration: none;
   width: 100%;
   span {
@@ -92,6 +93,7 @@
   .footer-contact--tel,
   .footer-contact--hours {
     flex-wrap: nowrap;
+    text-align: inital;
   }
   .footer-wrapper {
     height: auto;

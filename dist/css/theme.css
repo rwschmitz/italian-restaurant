@@ -225,6 +225,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 0 2rem;
+  text-align: center;
   text-decoration: none;
   width: 100%;
 }
@@ -283,6 +284,7 @@ body {
   .footer-contact--hours {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    text-align: inital;
   }
   .footer-wrapper {
     height: auto;
