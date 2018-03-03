@@ -8,7 +8,6 @@
   display: flex;
   flex-wrap: wrap;
   height: 75%;
-  //height: auto;
   justify-content: center;
   width: 100%;
 }
@@ -23,12 +22,15 @@
 // Child to .hero-container
 .hero-headline {
   @extend %headline;
-  border-bottom: 1px solid rgba($coconut-milk, 0.25);
+  //border-bottom: 1px solid rgba($coconut-milk, 0.25);
   color: $coconut-milk;
   display: flex;
   font-size: 16px;
   font-weight: 100;
+  justify-content: center;
   letter-spacing: 2px;
+  padding-bottom: 2rem;
+  width: 100%;
 }
 // Child to .hero-container
 .hero-btn {
@@ -41,11 +43,22 @@
   letter-spacing: 2px;
   opacity: 1;
   padding: 1rem 2rem;
+  position: initial;
   text-decoration: none;
   transition: background-color 250ms ease-in-out;
   &:hover {
     background-color: rgba($coconut-milk, 0.25);
     }
+}
+@include mq(480px) {
+  .hero-headline {
+    font-size: 24px;
+  }
+}
+@include mq(800px) {
+  .hero-headline {
+    font-size: 40px;
+  }
 }
 @include mq(1024px) {
   // Child to .wrapper
@@ -70,7 +83,6 @@
   }
   // Child to .hero-container
   .hero-headline {
-    border-bottom: 1px solid rgba($coconut-milk, 0.25);
     color: $coconut-milk;
     font-size: 50px;
     letter-spacing: 16px;
